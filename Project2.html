@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan API</title>
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1d;
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Smooth scroll effect */
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            color: #ffcc00;
+            font-size: 2.5rem;
+        }
+
+        /* Navbar */
+        nav {
+            text-align: center;
+            background: #333;
+            padding: 10px;
+            position: sticky; /* Navbar sticks to the top on scroll */
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: #0ff;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        nav a.active {
+            background: #ffcc00;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: #333;
+        }
+
+        /* Main Section */
+        .main-content {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        /* Character and Episode Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #222;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h3 {
+            color: #0ff;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="file:///C:/Users/sebas/Downloads/0921910f-820c-4f21-9d15-72aa62828be2.webp" alt="Attack on Titan Logo">
+        <h1>Attack on Titan API</h1>
+        <p>Access information about the Attack on Titan world!</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#characters">Characters</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content" id="home">
+        <div class="section-title">Welcome to the Attack on Titan API</div>
+        <p>Explore characters, locations, and titans from the anime world!</p>
+    </div>
+
+    <div class="main-content" id="characters">
+        <div class="section-title">Characters</div>
+        <div class="card-container" id="character-cards">
+            <!-- Existing Character Cards -->
+            <div class="card">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/467475510_1100975958341309_4181578028572370178_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeH9B8XWKgts3BAoKqL9Drq1NTZpJhi6FHM1NmkmGLoUc9zHdDqDdTlxdBWVK3XatKhJMehvo_Hryo5Gahc8w9VW&_nc_ohc=Aww5S4Qwb1wQ7kNvgFBTBrC&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QF8JbSY7GUhMEMISEkFceug12DHiFay0P9DOEqniAVyOQ&oe=6768175E" alt="Eren Jaeger">
+                <h3>Eren Jaeger</h3>
+                <p>Eren Jaeger is the main protagonist of Attack on Titan. Initially, Eren harbors a strong desire for revenge against the Titans who destroyed his home and killed his family.</p>
+            </div>
+            <div class="card">
+                <img src="https://wallpapercg.com/media/ts_2x/24244.webp" alt="Mikasa Ackerman">
+                <h3>Mikasa Ackerman</h3>
+                <p>Mikasa Ackerman is one of Eren’s closest friends and adopted sister. She is a member of the Scout Regiment and is highly skilled in combat.</p>
+            </div>
+            <div class="card">
+                <img src="c:\Users\sebas\Downloads\armin-arlert-ai-art-1920x1080-18704 (2).jpg" alt="Armin Arlert">
+                <h3>Armin Arlert</h3>
+                <p>Armin Arlert is Eren's childhood friend and an intelligent tactician in the Scout Regiment. He is known for his quick thinking and strategic mind.</p>
+            </div>
+            <div class="card">
+                <img src="https://wallpapercg.com/media/ts_2x/24234.webp" alt="Levi Ackerman">
+                <h3>Levi Ackerman</h3>
+                <p>Levi Ackerman is the captain of the Scout Regiment and one of humanity's most skilled soldiers. He is known for his exceptional combat abilities and stoic personality.</p>
+            </div>
+    
+            <div class="card">
+                <img src="https://images6.alphacoders.com/135/1353802.jpeg" alt="Armored Titan">
+                <h3>Armored Titan</h3>
+                <p>The Armored Titan, possessed by Reiner Braun, is known for its nearly impenetrable armor and immense strength, making it a formidable foe in battle.</p>
+            </div>
+            <div class="card">
+                <img src="https://images2.alphacoders.com/612/612514.jpg" alt="Colossal Titan">
+                <h3>Colossal Titan</h3>
+                <p>The Colossal Titan, held by Bertholdt Hoover, is infamous for its massive size and ability to generate devastating explosions upon transformation.</p>
+            </div>
+            <div class="card">
+                <img src="https://image.tensorartassets.com/model_showcase/617882198860824755/37f55384-0616-0ba4-3d2b-2626f057112f.png" alt="Female Titan">
+                <h3>Female Titan</h3>
+                <p>Controlled by Annie Leonhart, the Female Titan combines agility and power with the ability to harden its skin for both offensive and defensive purposes.</p>
+            </div>
+            <div class="card">
+                <img src="https://w0.peakpx.com/wallpaper/156/828/HD-wallpaper-attack-on-titan-founding-titan.jpg" alt="Founding Titan">
+                <h3>Founding Titan</h3>
+                <p>The Founding Titan, controlled by Eren Jaeger, is known for its unique ability to throw objects with deadly precision and for its intelligence in combat situations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main-content" id="about">
+        <div class="section-title">About</div>
+        <p>
+            <i>Attack on Titan</i> is a monumental work in the anime and manga landscape, written and illustrated by Hajime Isayama. It stands out for its profound exploration of themes like freedom, survival, morality, and the cycles of violence that plague humanity.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💻 by <a href="https://github.com/ZachMcMullen" target="_blank">Edward</a></p>
+        <p>API data powered by the <a href="https://attackontitanapi.com" target="_blank">Attack on Titan API</a></p>
+    </footer>
+</body>
+</html>
