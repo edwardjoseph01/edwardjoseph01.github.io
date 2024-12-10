@@ -13,7 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            overflow-x: hidden; /* Allow vertical scrolling while preventing horizontal overflow */
+            overflow-x: hidden;
             position: relative;
         }
         body::before {
@@ -23,23 +23,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Soft blue to soft pink */
-            animation: gradient 10s ease infinite;
+            background: url('https://mrwallpaper.com/images/hd/aesthetic-boy-city-art-bq7qqp37yv5jnefd.jpg') no-repeat center center;
+            background-size: cover;
             z-index: -1;
         }
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
         header {
-            background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            background: rgba(51, 51, 51, 0.8);
             color: #fff;
             padding: 60px 20px;
             text-align: center;
@@ -120,28 +109,11 @@
             background: #333;
             color: #fff;
             width: 100%;
-            position: relative;
-            bottom: 0;
         }
         @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8em;
-            }
-            h2 {
-                font-size: 1.2em;
-                margin-top: 20px;
-            }
             .container {
-                grid-template-columns: 1fr; /* Single column for mobile */
+                grid-template-columns: 1fr;
                 gap: 15px;
-            }
-            .project {
-                margin: 10px 0;
-                padding: 15px;
-            }
-            footer {
-                font-size: 0.9em;
-                padding: 15px 0;
             }
         }
     </style>
@@ -157,24 +129,21 @@
 
 <div class="container">
     <div class="project">
-        <h3>Project Title 1</h3>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1u7uhLO7m2iCsEK2czkXQ_PtAoQs59zwGlg&s" alt="Project 1 Screenshot">
-        <p>Short description of Project 1. What technologies were used? What was the goal?</p>
-        <a href="Italy.html" target="_blank">View Project</a>
+        <h3>ITALY WEBSITE</h3>
+        <img src="https://lh3.googleusercontent.com/fife/ALs6j_Hm6i9PkQ92i03vAO33KsgKK2p3bioPcwUr8j6eUped6Vn6pZpi-z7QamUDOn1uLrOmhEHcE8nCddXWJI9ncX8ezg31r3Dx4omcSCWeIz3sVflzJCxmJw3mNCeGz41PQWLEfGL-m6jMJ9z_BYd5xIwMxgoKCM19j2M9im8LeK9BXs4WYAdfetf1FjjjVdZyUC4S4ELUXkzWj69WlLbgtx93BZwAq_O0K7qsXmA_wLS2dIQbNRgWZ4zPheRGUJtFyd9pKuom472kHjYIBsqTg81cxbsg9soiwECXXkqf-fz6e3lARHNkjNPGKJOAp73li9N7ZywKQ71yX5UwUs4gCYerpJWXM-xNvHWOJn5EsKqA7L1f7tA06LXglReNTFqtO2JPqA1ZcRMPRsgHs_vk2Zz2ED6jPHmuKc4ZHTar0e02WskCxvz62KKvxy92UGhkRgkMMnaSo0sf_dq-c_UcqP0sRvrmpV5Nu-B2ElroBPHlbhfjBmKLPMAN3PnVMuw8bxUjTw8E5BW_a39A1qJt0cgRMLuyo9nB_Lr9HQNi6yQn4ftP9ibuDlJx66BBRFh_8aN57J4BD2u509pqV3VjiZydYdXy6rdT-qaTbalLYXH9PqsoHCjoGrcjXWAO1jGmq4WFQLliXebZd04m9cQmDUAWhn4CaTEWHsggbHvk9QmPi1cfqX-ccbxQYsRnYsOwXcFj4EKqHy4YxgkrZGNCfker_b3zfF6isdu5roheqgZ9C3hGzVF2c82STqcqAwX0WHlR0oXF1JRh5DhvdwXzMY_hnjVC4CdVFo1xT4rWId-hJHX1Vmh4y0qz5yE3OiV1t1uOpIOjajxArZqMI3MGqT-ArjGSgRbNt1zrxqtI_px1GqIdLV0M-2DhLBOhE4h6X79KhAOKqjZi9V1pY7TeoeREp04vxRRMrawAVvQvwTC8plVLbF24JjotpC0MjeReCcaxtPCDLRIyqRRkNpLshTBayKgQ7fIEVxYXbIm8B95IcIYRN5fFcDCtsekV0ukZqkuhYnv_jgkUwi1DwwSWdoS6oJj60v5e-uwN4yeexdEAw_5vucHMZqmUSCwygSIQGO9u6MXPxi--2EZZXp3EtQjd43418Fl77DB2hpZn9GAsuq1oQ40lqkxOBQQ7FpB2T-uLJtpvmS6ONE1P3Z8PrzV5U_5oD3wifj7uoKBC5Puv8S4umE2clUFmwk4uYbcWyZ6-vDh5ovxHs-SXm1c2y-xCv04u2WrXD24J33HLSOTIYd7lqsUQ2LRDAClkBkaueSOb3mcFCbDT7YgSa_HIlgRNo_QNsJdPyKlGehG_gpg-WvRU8mcT7wRbOcz9yY8iAw=s512" alt="Project 1 Screenshot">
+        <a href="Italy.html" target="_blank">Open Project</a>
     </div>
 
     <div class="project">
-        <h3>Project Title 2</h3>
+        <h3>ATTACK ON TITAN API</h3>
         <img src="f463e7c4-4e2b-4f33-b3ab-39d0d8b3bd10.jpg" alt="Project 2 Screenshot">
-        <p>Short description of Project 2. What technologies were used? What was the goal?</p>
-        <a href="Project2.html" target="_blank">View Project</a>
+        <a href="Project2.html" target="_blank">Open Project</a>
     </div>
 
     <div class="project">
-        <h3>Project Title 3</h3>
+        <h3>Project 3</h3>
         <img src="project3-image.jpg" alt="Project 3 Screenshot">
-        <p>Short description of Project 3. What technologies were used? What was the goal?</p>
-        <a href="https://link-to-project3.com" target="_blank">View Project</a>
+        <a href="https://link-to-project3.com" target="_blank">Open Project</a>
     </div>
 </div>
 
